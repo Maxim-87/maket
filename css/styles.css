@@ -6,7 +6,7 @@ html {
     box-sizing: inherit;
 }
 
-h1,h2,h3,h4,h5,p {
+h1, h2, h3, h4, h5, p {
     margin: 0;
     padding: 0;
 }
@@ -116,7 +116,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: #F7F7F7;
 }
 
 .h4 {
@@ -131,7 +131,7 @@ body {
 }
 
 .about {
-   position: relative;
+    position: relative;
 }
 
 .info {
@@ -144,47 +144,58 @@ body {
     min-height: 300px;
     padding: 57px 130px;
     color: #F7F7F7;
-    background-color: #F7654A;
+    background-color: var(--white-color);
 }
 
 .about_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
 }
 
 .about_grid-item {
-    background-color: black;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*max-width: 190px;*/
-    /*max-height: 186px;*/
+    text-align: center;
+    width: 190px;
 }
 
 .about_h4 {
-    /*margin: 0;*/
-    /*font-weight: 500;*/
-    /*font-size: 72px;*/
-    /*line-height: 107px;*/
-    /*text-align: center;*/
-    /*text-transform: uppercase;*/
-    /*color: var(--accent-color);*/
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 107px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-color);
 }
 
 .about_h5 {
-    /*margin: 0;*/
-    /*font-weight: 500;*/
-    /*font-size: 36px;*/
-    /*line-height: 53px;*/
-    /*text-align: center;*/
-    /*text-transform: uppercase;*/
-    /*color: var(--dark-color);*/
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--dark-color);
 }
 
 .about_p {
-    /*font-weight: 500;*/
-    /*font-size: 18px;*/
-    /*line-height: 27px;*/
-    /*text-align: center;*/
-    /*color: var(--gray-color);*/
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: var(--gray-color);
+}
+
+@media screen and (max-width: 1280px) {
+    .about_grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about_grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
