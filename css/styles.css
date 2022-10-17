@@ -212,14 +212,14 @@ body {
     }
 }
 
-.about-h2 {
+.section-h2 {
     text-align: center;
 }
 
 .about_project {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     margin-top: 50px;
 
@@ -255,7 +255,7 @@ body {
 
 @media screen and (max-width: 1280px) {
     .about {
-     padding: 450px 15px 30px;
+        padding: 450px 15px 30px;
     }
 }
 
@@ -299,12 +299,99 @@ body {
 }
 
 .request_button {
-    width: 175px;
-    height: 49px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 3px;
+    padding: 14px 30px;
+    border: none;
+    background-color: #F7F7F7;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
-
-
 
 .request_image {
-
+    margin-right: 15px;
 }
+
+@media screen and (max-width: 1280px) {
+    .request_content {
+        padding: 15px 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .request_content {
+        flex-wrap: wrap;
+    }
+}
+
+.services {
+padding-top: 92px;
+}
+
+.services_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 42px;
+    margin-top: 66px;
+    margin-bottom: 150px;
+}
+
+.services_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 53px 85px;
+    width: 350px;
+    background-color: #e5e5e5;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+}
+
+.services_item_image {
+    margin: 0 auto 20px;
+}
+
+.services_h4 {
+    margin: 0 auto;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 1280px) {
+    .services {
+        padding: 0 20px;
+    }
+    .services_content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .services_item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        padding: 0 20px;
+    }
+    .services_content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .services_item {
+        width: 100%;
+    }
+}
+
