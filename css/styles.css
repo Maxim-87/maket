@@ -510,3 +510,42 @@ body {
         justify-content: center;
     }
 }
+
+.reviews {
+    padding: 150px 0;
+}
+
+.partners_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-top: 60px;
+}
+
+.partners_item {
+}
+
+.item_content {
+    background-color: #F7F7F7;
+    padding: 21px 30px;
+    margin-bottom: 13px;
+
+}
+
+.item_quotes {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    margin-bottom: -35px;
+    color: var(--accent-color);
+
+}
+
+.item_h4 {
+    text-transform: none;
+}
+
+.reviews_span {
+    color: var(--accent-color);
+}
