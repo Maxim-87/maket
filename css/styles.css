@@ -198,6 +198,10 @@ body {
 }
 
 @media screen and (max-width: 1280px) {
+    .header_title {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .about_grid {
         position: inherit;
         grid-template-columns: repeat(2, 1fr);
@@ -449,25 +453,25 @@ body {
     color: #999999;
 }
 
-.question_item_h3.close::before,
-.question_item_h3.open::before {
-    content: '';
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-image: url('../img/Polygon.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 8px;
-}
+/*.question_item_h3.close::before,*/
+/*.question_item_h3.open::before {*/
+/*    content: '';*/
+/*    display: inline-block;*/
+/*    width: 15px;*/
+/*    height: 15px;*/
+/*    background-image: url('../img/Polygon.svg');*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    margin-right: 8px;*/
+/*}*/
 
-.question_item_h3.open::before {
-    transform: rotate(-90deg);
-}
+/*.question_item_h3.open::before {*/
+/*    transform: rotate(-90deg);*/
+/*}*/
 
-.question_item_h3.close + .question_item_p {
-    display: none;
-}
+/*.question_item_h3.close + .question_item_p {*/
+/*    display: none;*/
+/*}*/
 
 @media screen and (max-width: 1280px) {
     .question {
@@ -601,8 +605,20 @@ body {
 .text {
     text-align: center;
 }
+
+.text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .text_accent {
   color: var(--accent-color);
+}
+
+.text_accent a {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media screen and (max-width: 1280px) {
